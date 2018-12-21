@@ -4,7 +4,7 @@ RUN apt-get update
 
 RUN DEBIAN_FRONTEND=noninteractive \
     apt-get install -y tzdata && \
-    ln -fs /usr/share/zoneinfo/Europe/Prague /etc/localtime && \
+    ln -fs /usr/share/zoneinfo/America/Chicago /etc/localtime && \
     dpkg-reconfigure --frontend noninteractive tzdata
 
 RUN DEBIAN_FRONTEND=noninteractive \
